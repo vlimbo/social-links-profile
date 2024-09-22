@@ -3,32 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Social links profile</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      font-family: Inter, Arial;
+      margin: 0;
+      padding-top: 90px;
+      padding-bottom: 90px;
+      display: flex;
+      justify-content: center;
+      background-color: #141414 ;
+    }
+
+    p, h1, h2 {
+      margin: 0;
+    }
+
+    .main-container {
+      background-color: #1F1F1F;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 36px 40px;
+      border-radius: 10px;
+    }
+
+    .image-container img {
+      display: flex;
+      justify-content: center;
+      width: 80px;
+      border-radius: 40px;
+      margin-bottom: 16px;
+    }
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .text-container h1 {
+      font-size: 1.3rem;
+      margin-bottom: 5px;
+      color: white;
+      font-weight: 500;
+    }
+
+    .text-container h2 {
+      font-size: 0.9rem;
+      color: #C4F82A;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .text-container p {
+      font-size: 0.7rem;
+      color: white;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .button-container button {
+      color: white;
+      background-color: #333333;
+      border: none;
+      padding: 10px 70px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      border-radius: 6px;
+      transition: background-color 0.6s, color 0.6s;
+    }
+
+    .button-container button:hover {
+      background-color: #C4F82A;
+      color: black;
+    }
   </style>
 </head>
 <body>
-
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="main-container">
+    <div class="image-container">
+      <img src="assets/images/Design uten navn(5).png" alt="picture of me">
+    </div>
+    <div class="text-container">
+      <h1>Vetle Limbodal</h1>
+      <h2>Oslo, Norway</h2>
+      <p>"Front-end developer and avid reader."</p>
+    </div>
+    <div class="button-container">
+      <button>GitHub</button>
+      <button>Frontend Mentor</button>
+      <button>LinkedIn</button>
+      <button>Twitter</button>
+      <button>Instagram</button>
+    </div>
+  </main>
 </body>
 </html>
